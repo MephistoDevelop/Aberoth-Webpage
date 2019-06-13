@@ -1,24 +1,15 @@
-# README
+#Blog Page
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Basic Ruby on Rails Blog Repository
 
-Things you may want to cover:
+**Description**
 
-* Ruby version
+Simple repository in Ruby on Rails language to do a simple Blog page
 
-* System dependencies
+# Languaje
 
-* Configuration
+Ruby on Rails
 
-* Database creation
+**Coded by**
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[MephistoDevelop](https://www.github.com/mephistodevelop)
