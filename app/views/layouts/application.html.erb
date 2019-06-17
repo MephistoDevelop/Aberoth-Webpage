@@ -8,8 +8,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header >
+      <nav class="be-red white">
+          <ul class="no-list row center-xs">
+          <li class="col-md">Inicio</li>
+          <li class="col-md">Diseño</li>
+          <li class="col-md">Programacion</li>
+          <li class="col-md">Patrones</li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
