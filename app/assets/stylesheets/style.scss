@@ -1,0 +1,35 @@
+body {
+  background-color: #040505;
+  background-image: linear-gradient(315deg, #005870 0%, #040505 74%);
+  color: whitesmoke;
+}
+body,
+head,
+ul {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+li {
+  padding: 0px 20px;
+}
+.be-red {
+  background-color: #8f2315;
+}
+
+.large-padding {
+  padding: 10px 7px;
+}
+
+li:hover {
+  background-color: darkgrey;
+}
+
+.white {
+  color: whitesmoke;
+}
+.gradient {
+  background-color: #e9bcb7;
+  background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
+}
