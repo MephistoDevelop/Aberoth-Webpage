@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,11 +12,18 @@
   <body>
     <header >
       <nav class="be-red white large-padding">
-         <ul class="no-list row center-xs">
-          <li class="col-md">Inicio</li>
-          <li class="col-md">Quienes Somos</li>
-          <li class="col-md">Discografia</li>
-          <li class="col-md">Contacto</li>
+         <ul class="no-list row center-xs middle-xs">
+          <li class="col-md logo">
+            <h1 class="no-margin">
+              <%= image_tag("logo.jpg",width:"120px")%>
+            </h1>
+          </li>
+          <li class="col-md li-nav gothic-font">
+            <%= link_to "Inicio" , root_path%>
+          </li>
+          <li class="col-md li-nav gothic-font">Quienes Somos</li>
+          <li class="col-md li-nav gothic-font">Discografia</li>
+          <li class="col-md li-nav gothic-font">Contacto</li>
         </ul>
       </nav>
     </header>
