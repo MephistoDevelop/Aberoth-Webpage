@@ -1,0 +1,22 @@
+<%= form_for(@article) do |f| %>
+<div style="width:80%; margin:0 auto;">
+    <h1>Ingresar Usuario</h1>
+    <% @article.errors.full_messages.each do |message| %>
+      <div class="be-red white">
+        * <%= message%>
+      </div>
+    <%end%>
+  <div class="field">
+    <%= f.text_field :name, placeholder: "Ingesa tu nombre", class:"form-control center-xs middle-xs"%>
+  </div>
+  <div class="field">
+    <%= f.text_field :lastname, placeholder:"Ingresa tus  apellidos", class:"form-control center-xs middle-xs" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :age, placeholder:"Ingresa tu edad" , class:"form-control center-xs middle-xs"%>
+  </div>
+  <div class="field">
+    <%= f.submit  "Guardar", class:"btn"%>
+  </div>
+</div>
+<%end%>
