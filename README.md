@@ -1,4 +1,4 @@
-#Blog Page
+##Blog Page
 
 ### Basic Ruby on Rails Blog Repository
 
