@@ -1,15 +1,43 @@
-# Blog Page
+# ABEROTH OFFICIAL WEBPAGE  
 
-### Basic Ruby on Rails Blog Repository
+### WebPage Repository
 
-**Description**
+**Description** 
 
-Simple repository in Ruby on Rails language to do a simple Blog page
+WebPage made with ruby on rails framework
+with all of the main task from a blog page.
 
-# Languaje
+## Framework
 
 Ruby on Rails
+
+## GEMS
+
+* Bcrypt
+* Postgres
+
+
+## PROTOCOLS
+HTTP
 
 **Coded by**
 
 [MephistoDevelop](https://www.github.com/mephistodevelop)
+
+## Getting started
+To get started with the app, clone the repo and then install the needed gems:
+
+##### $ bundle install --without production
+
+Next, migrate the database:
+
+##### $ rails db:migrate
+
+Finally, run the test suite to verify that everything is working correctly:
+
+##### $ rails test
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+##### $ rails server
+origin git@github.com:MephistoDevelop/aberoth-webpage.git
