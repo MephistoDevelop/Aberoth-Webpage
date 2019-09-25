@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     user=User.find_by(email:params[:session][:email].downcase)
-    if user
+    if user && authenticate(params[:session][:password])
       redirect_to users_path
     else
       flash[:danger]="Necesitas Registrarte para ver contenido"

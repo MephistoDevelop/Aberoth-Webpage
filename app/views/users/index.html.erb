@@ -1,2 +1,8 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>Informacion de Usuario</h1>
+<div ><span class="bolder">Nombre: </span>
+  <%= @user.name %><br>
+  <span class="bolder">Apellidos: </span><%= @user.lastname %> <br>
+  <span class="bolder">Correo: </span> <%= @user.email %> <br>
+  <span class="bolder">Edad: </span><%= @user.age %> <br>
+
+</div>

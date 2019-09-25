@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
+    @user = User.find_by(params[:name])
   end
 
   def new
