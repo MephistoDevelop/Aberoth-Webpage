@@ -44,19 +44,51 @@ li {
 .field {
   margin-top: 1em;
 }
+::placeholder {
+  color: black;
+}
+.alert{
+  background-color: red;
+  color :white;
+}
+.form-control-user {
+  border: none;
+
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+
+  border-bottom: 1px solid;
+
+  outline: none;
+
+  width: 90%;
+
+  display: block;
+
+  font-size: 1.2em;
+
+  margin: 10px 4%;
+
+  height: 100%;
+
+  border-radius: 15px;
+
+  padding: 0px 10px;
+}
+.gradient {
+  background-color: black;
+  background-image: linear-gradient(315deg, #000000 0%, #434343 74%);
+}
 .form-control {
   border: none;
   border-bottom: 1px solid;
   outline: none;
   width: 100%;
   display: block;
-  padding: 10 px 0px;
+  padding: 10px 0px;
   font-size: 1.2em;
-  height: 50px;
-}
-.gradient {
-  background-color: black;
-  background-image: linear-gradient(315deg, #000000 0%, #434343 74%);
+  height: 100%;
 }
 .gothic-font {
   font-family: "Marck Script", cursive;
@@ -91,4 +123,110 @@ li {
 }
 .white {
   color: white;
+}
+#log-text{
+  text-align: center;
+}
+#container-form{
+  color:white;
+  background: linear-gradient(296deg, #FFFFFF 0%, #000000 30%, #000000 3%);
+  height: 40%;
+  margin-top: 5%;
+  font-weight: 800;
+  border-radius:15px;
+}
+#session_email{
+  height: 100%;
+  margin:10px 0px;
+}
+#session_password{
+  height: 100%;
+  margin: 10px 0px;
+}
+#btn-crear-usuario{
+  margin-bottom: 20px;
+  margin-left: 4%;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  width: 40%;
+  height: 30px;
+  font-weight: 800;
+
+}
+#signup-text{
+  text-align: center;
+  margin: 2px 0 0 0;
+}
+#btn-login{
+  margin-bottom: 20px;
+  margin-left: 47%;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  width: 30%;
+  height: 38px;
+  font-weight: 800;
+}
+
+#user-new-label{
+  color:blue;
+  font-weight: 800;
+  font-size: 16px;
+margin: 0px 10px;
+}
+#user-new-label:hover{
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+#form-login{
+  padding: 0px 100px;
+}
+
+#form-signup{
+  padding: 0px 60px;
+}
+
+#img-login{
+  width:130px;
+  height: 130px;
+}
+#error_explanation{
+  background-color: white;
+  color: red;
+  font-weight: 800;
+}
+
+#flash{
+  background-color: red;
+  margin: 10px 10px;
+  padding: 0px 10px;
+  font-weight: 800;
+  font-size: 16px;
+}
+#forgot-password{
+  color:blue;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 5px 10px;
+}
+#forgot-password:hover{
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 880px){
+  .form-login{
+    justify-content: center;
+  }
+}
+//Mobile Devices
+@media only screen and (max-width: 700px){
+  .form-login{
+    justify-content: center;
+  }
+  .no-list{
+    display: block;
+  }
 }

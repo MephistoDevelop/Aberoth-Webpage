@@ -10,23 +10,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <header >
-      <nav class="be-red white large-padding underline">
-        <div class="col-md underline logo center-xs">
-          <h1 class="no-margin">
-            <%= image_tag("logoblanco.jpg",width:"120px")%>
-          </h1>
-        </div>
-         <ul class="no-list row center-xs middle-xs">
-          <li class="col-md li-nav gothic-font">
-            <%= link_to "Inicio" , root_path%>
-          </li>
-          <li class="col-md li-nav gothic-font">SoundCloud</li>
-          <li class="col-md li-nav gothic-font">Discografia</li>
-          <li class="col-md li-nav gothic-font">Contacto</li>
-        </ul>
-      </nav>
-    </header>
-    <%= yield %>
+    <%= render 'shared/header' %>
+    <div class="col">
+      <%= yield %>
+    </div>
   </body>
 </html>

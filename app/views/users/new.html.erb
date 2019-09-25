@@ -1,2 +1,21 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="row form-login">
+  <div id="container-form" class="col-md-6 col-md-offset-3">
+   <h1 id="signup-text">Registro</h1>
+    <div class="col-md center-xs middle-xs">
+      <h1 class="no-margin">
+        <%= image_tag("logoblanco.jpg",size:"200x160")%>
+      </h1>
+    </div>
+   <div class="col">
+      <%= form_for(@user,html:{id:"form-login"}) do |f| %>
+         <%= render 'shared/error_messages'%>
+         <%= f.text_field :email, class: 'form-control-user',placeholder: 'Ingresa Tu Nombre' %>
+          <%= f.text_field :lastname, class: 'form-control-user' ,placeholder: 'Ingresa Tu Apellido' %>
+          <%= f.email_field :email, class: 'form-control-user',placeholder: 'Ingresa Tu Correo' %>
+          <%= f.password_field :password, class: 'form-control-user',placeholder: 'Ingresa Tu Contraseña' %>
+          <%= f.text_field :email, class: 'form-control-user',placeholder: 'Confirmar Tu Contraseña' %>
+          <%= f.submit 'Crear Cuenta',id:"btn-crear-usuario" %>
+      <% end %>
+    </div>
+  </div>
+</div>

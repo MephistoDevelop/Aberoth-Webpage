@@ -1,0 +1,9 @@
+<div class="container">
+  <% @user.each  do |item| %>
+    <p>  Nombre: <%= item.name %> </p>
+     <p> Apellidos: <%= item.lastname %> </p>
+      <p> Edad: <%= item.age %></p>
+     <p> Correo:<%= item.email %></p>
+      <p> Password: <%= item.password_digest %></p>
+  <%  end%>
+</div>
