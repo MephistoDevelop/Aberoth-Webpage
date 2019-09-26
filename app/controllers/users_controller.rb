@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @user = User.find_by(params[:name])
+    @user = User.find_by(params[:email])
   end
 
   def new
@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success]="Welcome User: #{@user.name}"
+      render 'new'
     else
       render 'new'
     end
@@ -20,7 +21,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user =User.all
+    @user =User.find_by(params[:user_id])
   end
 
   private

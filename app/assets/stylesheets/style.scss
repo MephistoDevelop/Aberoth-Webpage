@@ -120,9 +120,6 @@ li {
   text-decoration: underline;
 }
 
-.lista-header{
-  padding: 0px;
-}
 .logo {
   font-size: 1.5em;
 }
@@ -233,10 +230,18 @@ margin: 0px 10px;
   align-items: center;
 }
 
+.logueado{
+  font-size: 20px;
+  flex:min-content
+}
 
 @media only screen and (min-width: 701px) and (max-width: 880px){
   .form-login{
     justify-content: center;
+  }
+
+  .lista-header{
+    padding: 0px;
   }
 }
 //Mobile Devices
@@ -247,5 +252,9 @@ margin: 0px 10px;
   }
   .no-list{
     display: block;
+  }
+
+  .lista-header{
+    padding: 0px;
   }
 }

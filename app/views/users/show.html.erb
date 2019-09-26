@@ -1,9 +1,7 @@
 <div class="container">
-  <% @user.each  do |item| %>
-    <p>  Nombre: <%= item.name %> </p>
-     <p> Apellidos: <%= item.lastname %> </p>
-      <p> Edad: <%= item.age %></p>
-     <p> Correo:<%= item.email %></p>
-      <p> Password: <%= item.password_digest %></p>
-  <%  end%>
+    <p><span class="bolder">Nombre: </span><%= @user.name %> </p>
+     <p> Apellidos: <%= @user.lastname %> </p>
+      <p> Edad: <%= @user.age %></p>
+     <p> Correo:<%= @user.email %></p>
+      <p> Password: <%= @user.password_digest %></p>
 </div>

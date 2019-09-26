@@ -9,11 +9,12 @@
    <div class="col">
       <%= form_for(@user,html:{id:"form-login"}) do |f| %>
          <%= render 'shared/error_messages'%>
-         <%= f.text_field :email, class: 'form-control-user',placeholder: 'Ingresa Tu Nombre' %>
+         <%= f.text_field :name, class: 'form-control-user',placeholder: 'Ingresa Tu Nombre' %>
           <%= f.text_field :lastname, class: 'form-control-user' ,placeholder: 'Ingresa Tu Apellido' %>
           <%= f.email_field :email, class: 'form-control-user',placeholder: 'Ingresa Tu Correo' %>
+         <%= f.number_field :age, class: 'form-control-user',placeholder: 'Ingresa Tu Edad' %>
           <%= f.password_field :password, class: 'form-control-user',placeholder: 'Ingresa Tu Contraseña' %>
-          <%= f.text_field :email, class: 'form-control-user',placeholder: 'Confirmar Tu Contraseña' %>
+          <%= f.password_field :password_confirmation, class: 'form-control-user',placeholder: 'Confirmar Tu Contraseña' %>
           <%= f.submit 'Crear Cuenta',id:"btn-crear-usuario" %>
       <% end %>
     </div>
