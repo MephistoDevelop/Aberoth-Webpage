@@ -20,10 +20,20 @@ ul {
 li {
   padding: 0px 20px;
 }
+table,th,tr,td{
+  border: 1px solid black;
+  border-color: black;
+  padding: 0px;
+}
 ::placeholder {
   color: #ff1312;
   opacity: 1;
   text-transform: uppercase;
+}
+.table{
+  overflow-x: auto;
+  height: auto;
+  padding: 10px 0px;
 }
 
 .be-red {
