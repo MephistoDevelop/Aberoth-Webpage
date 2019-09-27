@@ -11,7 +11,7 @@
     </li>
     <li class="col-md li-nav gothic-font"><%= link_to "SoundCloud" ,soundcloud_path %></li>
     <li class="col-md li-nav gothic-font">Discografia</li>
-    <li class="col-md li-nav gothic-font">Contacto</li>
+    <li class="col-md li-nav gothic-font"><%= link_to "Contacto" ,contacto_path %></li>
     <% if logged_in? %>
         <li class="logueado col-md li-nav gothic-font">  <%= link_to "Bienvenido! " ,users_path %> </li>
         <li class="col-md li-nav gothic-font"> <%= link_to "Salir " ,users_path, method: :delete  %> </li>

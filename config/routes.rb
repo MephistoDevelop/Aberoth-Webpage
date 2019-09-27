@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'soundclouds/index'
+  get 'contacto' , to: 'contacto#index'
   get 'soundcloud',to: 'soundclouds#index'
   get  'login',to: 'sessions#new'
   post 'login',to: 'sessions#create'
