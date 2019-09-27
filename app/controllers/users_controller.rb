@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
   def index
-    @user = User.find_by(id: cookies.signed[:user_id])
-  end
-
+    if logged_in?
+      @user = User.find_by(id: cookies.signed[:user_id])
+    else
+      @user=User.new
+    end
+end
   def new
    @user = User.new
   end
@@ -10,8 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash.now[:success]="Welcome User: #{@user.name}"
-      render 'show'
+      flash[:success]="Welcome User: #{@user.name}"
+      redirect_to login_path
     else
       render 'new'
     end
@@ -24,7 +27,11 @@ class UsersController < ApplicationController
 
 
   def show
-    @user =User.find_by(params[:user_id])
+    if logged_in?
+      @user =User.find_by(params[:user_id])
+    else
+      @user=User.new
+    end
   end
 
   private

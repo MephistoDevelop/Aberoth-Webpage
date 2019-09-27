@@ -234,7 +234,23 @@ margin: 0px 10px;
   font-size: 20px;
   flex:min-content
 }
-
+#login-error{
+  background-color: red;
+  font-size: 27px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+}
+#sucessful-user{
+  background-color: lawngreen;
+  font-size: 27px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+}
+#welcome-container{
+    justify-content: center;
+}
 @media only screen and (min-width: 701px) and (max-width: 880px){
   .form-login{
     justify-content: center;

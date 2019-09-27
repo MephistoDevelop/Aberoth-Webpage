@@ -1,7 +1,12 @@
-<div class="container">
-    <p><span class="bolder">Nombre: </span><%= @user.name %> </p>
-     <p> Apellidos: <%= @user.lastname %> </p>
+<% if logged_in? %>
+    <div class="container">
+      <p><span class="bolder">Nombre: </span><%= @user.name %> </p>
+      <p> Apellidos: <%= @user.lastname %> </p>
       <p> Edad: <%= @user.age %></p>
-     <p> Correo:<%= @user.email %></p>
+      <p> Correo:<%= @user.email %></p>
       <p> Password: <%= @user.password_digest %></p>
-</div>
+    </div>
+<%else%>
+    <% render 'shared/login_error' %>
+<% end %>
+
