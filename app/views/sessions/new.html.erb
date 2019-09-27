@@ -8,15 +8,7 @@
         <%= image_tag("logoblanco.jpg",size:"200x160")%>
       </h1>
     </div>
-    <% if !flash.empty? %>
-        <div id="flash">
-          <% flash.keys.each do |k| %>
-              <div class="<%= k %>">
-                <%= flash[k] %>
-              </div>
-          <% end %>
-        </div>
-        <%end %>
+   <%= render 'shared/flash_error' %>
     <%= form_for(:session, url: login_path,html: {id: "form-login"})   do |f| %>
 
         <%= f.label :email %>

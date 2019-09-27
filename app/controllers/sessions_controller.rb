@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-  def new
+  include ::SessionsHelper
+  def new;
   end
 
   def create
@@ -10,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to users_path(user)
     else
       flash[:danger]="Necesitas Registrarte para ver contenido"
-      redirect_to login_path
+    reder 'new'
     end
   end
   def destroy
