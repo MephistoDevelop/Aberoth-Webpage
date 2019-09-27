@@ -1,23 +1,28 @@
+# frozen_string_literal: true
+
 class ArticlesController < ApplicationController
-  #GET /articles
+  # GET /articles
   def index
-    @articles  = Article.all
+    @articles = Article.all
   end
-  #GET /articles/1
+
+  # GET /articles/1
   def show
     @article = Article.find(params[:id])
   end
-  #GET /articles/new
+
+  # GET /articles/new
   def new
     @article = Article.new
   end
-  #POST /articles/create
+
+  # POST /articles/create
   def create
     @articles = Article.new(name: params[:article][:name],
-      lastname: params[:article][:lastname],
-      age: params[:article][:age])
-    if  @articles.save
-        redirect_to @articles
+                            lastname: params[:article][:lastname],
+                            age: params[:article][:age])
+    if @articles.save
+      redirect_to @articles
     else
       render :new
     end

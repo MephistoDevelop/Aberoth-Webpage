@@ -1,5 +1,5 @@
-class ContactoController < ApplicationController
-  def index
+# frozen_string_literal: true
 
-  end
+class ContactoController < ApplicationController
+  def index; end
 end
