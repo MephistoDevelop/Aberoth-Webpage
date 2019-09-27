@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @user = User.find_by(params[:email])
+    @user = User.find_by(id: cookies.signed[:user_id])
   end
 
   def new
@@ -10,8 +10,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success]="Welcome User: #{@user.name}"
-      render 'new'
+      flash.now[:success]="Welcome User: #{@user.name}"
+      render 'show'
     else
       render 'new'
     end

@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to users_path(user)
     else
       flash[:danger]="Necesitas Registrarte para ver contenido"
-    reder 'new'
+    render 'new'
     end
   end
   def destroy
