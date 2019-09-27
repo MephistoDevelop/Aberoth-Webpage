@@ -16,7 +16,7 @@
         <li class="logueado col-md li-nav gothic-font">  <%= link_to "Bienvenido Usuario: "+@user.name ,users_path %> </li>
         <li class="col-md li-nav gothic-font"> <%= link_to "Salir " ,users_path, method: :delete  %> </li>
     <% else %>
-        <li class="col-md li-nav gothic-font"><%= link_to "Log In",logout_path %></li>
+        <li class="col-md li-nav gothic-font"><%= link_to "Log In",login_path %></li>
     <%end%>
   </ul>
 </nav>
