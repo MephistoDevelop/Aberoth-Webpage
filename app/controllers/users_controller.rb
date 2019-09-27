@@ -13,7 +13,7 @@ end
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success]="Welcome User: #{@user.name}"
+      flash[:success]="Felicidades ! #{@user.name}, ahora puedes ingresar !"
       redirect_to login_path
     else
       render 'new'
