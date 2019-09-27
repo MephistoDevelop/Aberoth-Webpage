@@ -1,0 +1,21 @@
+<div class="table">
+  <% if logged_in? %>
+      <table>
+        <tr> <h1>Informacion de Usuario</h1></tr>
+        <tr>
+          <th class="bolder">Nombre</th>
+          <th class="bolder">Apellidos</th>
+          <th class="bolder">Edad</th>
+          <th class="bolder">Correo</th>
+        </tr>
+        <tr>
+          <td><%= @user.name %><br></td>
+          <td><%= @user.lastname %><br></td>
+          <td><%= @user.age %><br></td>
+          <td><%= @user.email %><br></td>
+        </tr>
+      </table>
+  <%else%>
+      <%= render 'shared/login_error' %>
+  <% end %>
+</div>
