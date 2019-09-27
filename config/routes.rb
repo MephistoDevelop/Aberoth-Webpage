@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'discografia',to: 'discografia#index'
   get 'contacto' , to: 'contacto#index'
   get 'soundcloud',to: 'soundclouds#index'
   get  'login',to: 'sessions#new'
