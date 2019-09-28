@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       remember(user)
       redirect_to users_path(user)
     else
-      flash[:danger] = 'Necesitas Registrarte para ver contenido'
+      flash.now[:danger] = 'Ingresa un Email y Contraseña registrados !'
       render 'new'
     end
   end
