@@ -8,9 +8,15 @@
         <%= image_tag("logoblanco.jpg",size:"200x160")%>
       </h1>
     </div>
+    <% if logged_in? %>
+
+    <% else %>
+        <%= render 'shared/flash_error' %>
+    <% end %>
+
 
     <%= form_for(:session, url: login_path,html: {id: "form-login"})   do |f| %>
-        <%= render 'shared/flash_error' %>
+
         <%= f.label :email %>
         <%= f.email_field :email, class: 'form-control' %>
 
