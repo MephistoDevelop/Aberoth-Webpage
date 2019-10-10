@@ -37,4 +37,4 @@ Finally, run the test suite to verify that everything is working correctly:
 
 ##### $ rails test
 
-![alt text](https://drive.google.com/file/d/1p7qeRhI85o2vK_7aNG15fqXgQ-AC1sst/view)
+![alt text](https://github.com/MephistoDevelop/Aberoth-Webpage/blob/master/Fakebook-ERM.png)
