@@ -1,15 +1,14 @@
-# ABEROTH OFFICIAL WEBPAGE  
+# ABEROTH OFFICIAL WEBPAGE
 
-![screenshot](./aberoth-gif.gif)
+![screenshot](./aberoth.gif)
 
 ## Live view
 
 - [Aberoth Page](https://aberoth.herokuapp.com/)
 
-
 ### WebPage Repository
 
-**Description** 
+**Description**
 
 WebPage made with ruby on rails framework
 with all of the main task from a blog page.
@@ -20,11 +19,11 @@ Ruby on Rails
 
 ## GEMS
 
-* Bcrypt
-* Postgres
-
+- Bcrypt
+- Postgres
 
 ## PROTOCOLS
+
 HTTP
 
 **Coded by**
@@ -32,14 +31,15 @@ HTTP
 [MephistoDevelop](https://www.github.com/mephistodevelop)
 
 ## Getting started
+
 To get started with the app, clone the repo and then install the needed gems:
 
-##### $ bundle install --without production
+##### \$ bundle install --without production
 
 Next, migrate the database:
 
-##### $ rails db:migrate
+##### \$ rails db:migrate
 
 Finally, run the test suite to verify that everything is working correctly:
 
-##### $ rails test
+##### \$ rails test
