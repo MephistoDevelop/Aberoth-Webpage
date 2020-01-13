@@ -1,6 +1,6 @@
 # ABEROTH OFFICIAL WEBPAGE  
 
-![screenshot](./screenshot.gif)
+![screenshot](./aberoth-gif.gif)
 
 ## Live view
 
