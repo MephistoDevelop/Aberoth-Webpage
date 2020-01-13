@@ -1,5 +1,12 @@
 # ABEROTH OFFICIAL WEBPAGE  
 
+![screenshot](./screenshot.gif)
+
+## Live view
+
+- [Aberoth Page](https://aberoth.herokuapp.com/)
+
+
 ### WebPage Repository
 
 **Description** 
@@ -36,5 +43,3 @@ Next, migrate the database:
 Finally, run the test suite to verify that everything is working correctly:
 
 ##### $ rails test
-
-![alt text](https://github.com/MephistoDevelop/Aberoth-Webpage/blob/master/Fakebook-ERM.png)
