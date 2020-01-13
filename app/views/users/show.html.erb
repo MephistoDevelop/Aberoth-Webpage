@@ -1,3 +1,4 @@
+<div class="contacto-container">
 <% if logged_in? %>
     <div class="container">
       <p><span class="bolder">Nombre: </span><%= @user.name %> </p>
@@ -9,4 +10,5 @@
 <%else%>
     <% render 'shared/login_error' %>
 <% end %>
+</div>
 

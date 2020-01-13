@@ -1,7 +1,8 @@
-<div class="table">
+<div class="contacto-container">
+  <div class="table">
   <% if logged_in? %>
       <table>
-        <tr> <h1>Informacion de Usuario</h1></tr>
+        <tr> <h1 class="title">Informacion de Usuario</h1></tr>
         <tr>
           <th class="bolder">Nombre</th>
           <th class="bolder">Apellidos</th>
@@ -18,4 +19,5 @@
   <%else%>
       <%= render 'shared/login_error' %>
   <% end %>
+  </div>
 </div>
